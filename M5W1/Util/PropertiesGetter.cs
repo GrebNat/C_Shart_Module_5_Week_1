@@ -1,15 +1,13 @@
-﻿using System.Runtime.CompilerServices;
-using static M5W1.Properties.Settings;
+﻿using M5W1.Properties;
 
-
-namespace M5W1.Util
+namespace M5W1.M5W1.Util
 {
     class PropertiesGetter
     {
-        public static string email => Default["email"].ToString();
-        public static string url => Default["url"].ToString();
-        public static string password => Default["password"].ToString();
-        public static string browser => Default["browser"].ToString();
+        public static string Email => Settings.Default["email"].ToString();
+        public static string Url => Settings.Default["url"].ToString();
+        public static string Password => Settings.Default["password"].ToString();
+        public static string Browser => Settings.Default["browser"].ToString();
        
     }
 }

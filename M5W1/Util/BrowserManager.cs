@@ -4,13 +4,13 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 
-namespace M5W1.Util
+namespace M5W1.M5W1.Util
 {
     public class BrowserManager
     {
         public static IWebDriver GetDriver()
         {
-            string driverName = PropertiesGetter.browser;
+            string driverName = PropertiesGetter.Browser;
             switch (driverName)
             {
                 case "chrome":
@@ -24,7 +24,7 @@ namespace M5W1.Util
                 case "firefox":
                     return new FirefoxDriver();
             }
-            ;
+            
             throw new Exception(
                 "Incorrect browser name supply, possible values are 'chrome', 'ie', 'internet explorer', 'ff','firefox'");
         }

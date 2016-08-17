@@ -2,7 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 
-namespace M5W1.PO
+namespace M5W1.M5W1.PO
 {
     public class AccountPanel
     {

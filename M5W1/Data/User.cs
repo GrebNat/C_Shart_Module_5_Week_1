@@ -1,6 +1,6 @@
-﻿using static M5W1.Util.PropertiesGetter;
+﻿using M5W1.M5W1.Util;
 
-namespace M5W1.Data
+namespace M5W1.M5W1.Data
 {
     class User
     {
@@ -9,8 +9,8 @@ namespace M5W1.Data
         public string Password { get; }
 
         internal User(){
-            UserName = email;
-            Password = password;
+            UserName = PropertiesGetter.Email;
+            Password = PropertiesGetter.Password;
         }
 
         internal User(string user, string password) {

@@ -1,6 +1,6 @@
-﻿using M5W1.Data;
+﻿using M5W1.M5W1.Data;
 
-namespace M5W1.Test.DataProvider
+namespace M5W1.M5W1.Test.DataProvider
 {
     class MailProvider
     {

@@ -1,13 +1,12 @@
-﻿using System.IO;
-using System.Threading;
+﻿using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 
-namespace M5W1.PO
+namespace M5W1.M5W1.PO
 {
     public class LoginPage
     {
-        public IWebDriver _driver;
+        public IWebDriver driver;
 
         [FindsBy(How = How.Id, Using = "Email")] public IWebElement accoutTextField;
         [FindsBy(How = How.Id, Using = "Passwd")] public IWebElement passwordTextField;
@@ -16,8 +15,8 @@ namespace M5W1.PO
 
         public LoginPage(IWebDriver driver)
         {
-            _driver = driver;
-            PageFactory.InitElements(_driver, this);
+            this.driver = driver;
+            PageFactory.InitElements(this.driver, this);
         }
 
         public MailPage Login(string user, string password)
@@ -33,7 +32,7 @@ namespace M5W1.PO
 
             signInButton.Click();
 
-            return new MailPage(_driver);
+            return new MailPage(driver);
         }
     }
 }

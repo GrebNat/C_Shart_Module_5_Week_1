@@ -1,9 +1,9 @@
-﻿using M5W1.Data;
+﻿using M5W1.M5W1.Data;
+using M5W1.M5W1.PO;
+using M5W1.M5W1.Test.DataProvider;
 using NUnit.Framework;
-using M5W1.PO;
-using M5W1.Test.DataProvider;
 
-namespace M5W1.Test.TestScenarious.GoogleTest
+namespace M5W1.M5W1.Test.TestScenarious.GoogleTest
 {
     [TestFixture]
     class GoogleTest : BaseTest

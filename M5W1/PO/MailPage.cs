@@ -1,11 +1,11 @@
 ﻿using System;
-using M5W1.Data;
+using M5W1.M5W1.Data;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
 
-namespace M5W1.PO
+namespace M5W1.M5W1.PO
 {
     public class MailPage
     {
