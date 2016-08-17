@@ -10,7 +10,7 @@ namespace M5W1.Util
     {
         public static IWebDriver GetDriver()
         {
-            string driverName = Properties.browser;
+            string driverName = PropertiesGetter.browser;
             switch (driverName)
             {
                 case "chrome":

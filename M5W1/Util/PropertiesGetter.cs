@@ -1,8 +1,10 @@
-﻿using static M5W1.Properties.Settings;
+﻿using System.Runtime.CompilerServices;
+using static M5W1.Properties.Settings;
+
 
 namespace M5W1.Util
 {
-    public class Properties
+    class PropertiesGetter
     {
         public static string email => Default["email"].ToString();
         public static string url => Default["url"].ToString();

@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 using static M5W1.Util.BrowserManager;
-using static M5W1.Util.Properties;
+using static M5W1.Util.PropertiesGetter;
 
 namespace M5W1.Test.TestScenarious
 {
